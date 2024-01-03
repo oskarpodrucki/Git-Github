@@ -16,4 +16,7 @@ https://www.w3schools.com/git/git_exercises.asp?remote=github
 
 #special:
 
-https://learngitbranching.js.org/?locale=pl
+https://learngitbranching.js.org/?locale=pl - website to learn
+
+https://education.github.com/git-cheat-sheet-education.pdf - git cheatsheet
+
