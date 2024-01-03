@@ -1,0 +1,67 @@
+ https://www.youtube.com/watch?v=0X-_Boa0qx4&t=258s:
+ 
+# 1. Listowanie zawartości bieżącego katalogu
+ls
+
+# 2. Przejście do katalogu "Documents/Github"
+cd Documents/Github
+
+# 3. Klonowanie repozytorium
+git clone https://github.com/OskarPodrucki/test.git
+
+# 4. Wyświetlenie dostępnych gałęzi (branch)
+git branch
+
+# 5. Przejście do katalogu "test"
+cd test
+
+# 6. Wyświetlenie dostępnych gałęzi w repozytorium "test"
+git branch
+
+# 7. Utworzenie nowej gałęzi o nazwie "beta"
+git branch beta
+
+# 8. Utworzenie nowej gałęzi o nazwie "dev"
+git branch dev
+
+# 9. Wyświetlenie dostępnych gałęzi po utworzeniu "beta" i "dev"
+git branch
+
+# 10. Usunięcie gałęzi "beta"
+git branch -d beta
+
+# 11. Ponowne wyświetlenie dostępnych gałęzi po usunięciu "beta"
+git branch
+
+# 12. Przełączenie na gałąź "dev"
+git checkout dev
+
+# 13. Wyświetlenie dostępnych gałęzi po przełączeniu na "dev"
+git branch
+
+# 14. Commit zmian na gałęzi "dev" z komunikatem "no siema"
+git commit -m "no siema" -a
+
+# 15. Dodanie wszystkich zmian do indeksu
+git add .
+
+# 16. Kolejny commit na gałęzi "dev" z nowym komunikatem
+git commit -m "no siemaaaa" -a
+
+# 17. Wysłanie zmian na zdalne repozytorium
+git push
+
+# 18. Ponowne wysłanie zmian na zdalne repozytorium
+git push
+
+# 19. Ustawienie gałęzi "dev" jako upstream i wysłanie zmian
+git push --set-upstream origin dev
+
+# 20. Wyświetlenie dostępnych gałęzi po konfiguracji upstream
+git branch
+
+# 21. Ponowne wysłanie zmian na gałąź "dev"
+git push
+
+# 22. Pobranie najnowszych zmian z zdalnego repozytorium
+git pull

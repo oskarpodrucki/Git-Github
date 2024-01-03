@@ -1,0 +1,53 @@
+https://www.w3schools.com/git/default.asp?remote=github
+
+# 1. Weryfikacja wersji Git
+git --version
+
+# 3. Konfiguracja użytkownika globalnie
+git config --global user.name "TwójNick"
+git config --global user.email "TwójEmail"
+
+# 3. Inicjalizacja nowego repozytorium
+mkdir gittest
+cd gittest
+git init
+
+# 4. Sprawdzenie plików
+ls
+git status
+
+# 5. Dodanie pliku do indeksu (staging area)
+git add index.html
+git status
+
+# Alternatywnie: Dodanie wszystkich zmian do indeksu
+git add .  # lub git add --all
+git status
+
+# 6. Commit zmian
+git commit -m "w3schools git&github"
+
+# Informacje o statusie plików w repozytorium
+# ?? - nieśledzone pliki
+# A - pliki dodane do indeksu
+# M - zmodyfikowane pliki
+# D - usunięte pliki
+git commit -a -m "w3schools git&github jest fajne i klarowne"
+git log
+
+# 7. Pomoc dotycząca commit
+git commit --help
+
+# Pełna pomoc dotycząca wszystkich komend
+git --help --all
+
+# 8. Tworzenie i sprawdzanie gałęzi
+git branch dev  # Tworzenie gałęzi o nazwie 'dev'
+git branch      # Wyświetlenie listy gałęzi
+
+# Przełączenie się na inną gałąź
+git checkout dev  # lub git switch dev
+
+# Przełączenie się na gałąź główną
+# git checkout master  # (dla starszych wersji Git)
+git switch master    # (dla nowszych wersji Git)
