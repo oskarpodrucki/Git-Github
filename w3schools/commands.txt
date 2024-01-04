@@ -3,7 +3,9 @@ https://www.w3schools.com/git/default.asp?remote=github
 # 1. Weryfikacja wersji Git
 git --version
 
-# 3. Konfiguracja użytkownika globalnie
+# 2. Konfiguracja użytkownika globalnie
+git init
+
 git config --global user.name "TwójNick"
 git config --global user.email "TwójEmail"
 
@@ -51,3 +53,14 @@ git checkout dev  # lub git switch dev
 # Przełączenie się na gałąź główną
 # git checkout master  # (dla starszych wersji Git)
 git switch master    # (dla nowszych wersji Git)
+
+
+# 9. Scalanie gałęzi (Branch Merge)
+# Przełącz się na gałąź główną
+git checkout master  # lub git switch master
+
+# Scalanie zmian z gałęzi 'dev' do gałęzi głównej
+git merge dev
+
+# Usunięcie gałęzi 'dev' (opcjonalne, jeśli już nie potrzebujesz)
+git branch -d dev
