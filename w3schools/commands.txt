@@ -4,8 +4,6 @@ https://www.w3schools.com/git/default.asp?remote=github
 git --version
 
 # 2. Konfiguracja użytkownika globalnie
-git init
-
 git config --global user.name "TwójNick"
 git config --global user.email "TwójEmail"
 
@@ -27,14 +25,14 @@ git add .  # lub git add --all
 git status
 
 # 6. Commit zmian
-git commit -m "w3schools git&github"
+git commit -m "Dodanie pliku index.html"
 
 # Informacje o statusie plików w repozytorium
 # ?? - nieśledzone pliki
 # A - pliki dodane do indeksu
 # M - zmodyfikowane pliki
 # D - usunięte pliki
-git commit -a -m "w3schools git&github jest fajne i klarowne"
+git commit -a -m "Aktualizacja plików"
 git log
 
 # 7. Pomoc dotycząca commit
@@ -51,16 +49,59 @@ git branch      # Wyświetlenie listy gałęzi
 git checkout dev  # lub git switch dev
 
 # Przełączenie się na gałąź główną
-# git checkout master  # (dla starszych wersji Git)
-git switch master    # (dla nowszych wersji Git)
-
+git switch master
 
 # 9. Scalanie gałęzi (Branch Merge)
 # Przełącz się na gałąź główną
-git checkout master  # lub git switch master
+git switch master
 
 # Scalanie zmian z gałęzi 'dev' do gałęzi głównej
 git merge dev
 
 # Usunięcie gałęzi 'dev' (opcjonalne, jeśli już nie potrzebujesz)
 git branch -d dev
+
+# 10. GitHub Get Started
+git remote add origin https://github.com/OskarPodrucki/testgit.git
+git push --set-upstream origin master
+
+# 11. GitHub Edit Code
+
+# 12. Pull from GitHub
+git fetch origin
+git status
+git log origin/master
+git diff origin/master
+git merge origin/master
+git status
+git pull origin
+
+# 12. Git Push to GitHub
+git commit -a -m "Aktualizacja pliku index.html"
+git status
+git push origin
+
+# 12. Git GitHub Branch
+
+# 13. Git Pull Branch from GitHub
+git pull
+git status
+git branch
+git branch -a
+git checkout html-test
+git pull
+git branch
+
+# 13. Git Push Branch to GitHub
+git checkout -b update-readme
+git status
+git add README.md
+git status
+git commit -m "Aktualizacja pliku README.md"
+git push origin update-readme
+
+# 14. Git GitHub Flow
+
+# 15. Git GitHub Pages
+git remote add gh-page https://github.com/OskarPodrucki/oskarpodrucki-test.github.io.git
+git push gh-page master
