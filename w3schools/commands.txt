@@ -1,4 +1,5 @@
-https://www.w3schools.com/git/default.asp?remote=github
+https://www.w3schools.com/git/default.asp?remote=github - ✅
+https://www.w3schools.com/git/git_exercises.asp?remote=github - ✅
 
 # 1. Weryfikacja wersji Git
 git --version
